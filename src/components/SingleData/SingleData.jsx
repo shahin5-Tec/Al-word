@@ -17,8 +17,9 @@ const SingleData = (props) => {
               {index + 1} .{feature}
             </p>
           ))}
+          <hr />
           <h1 className="text-2xl font-bold mt-4">{name}</h1>
-          <div className="flex gap-3">
+          <div className="flex gap-2">
             <span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -36,6 +37,22 @@ const SingleData = (props) => {
               </svg>
             </span>
             <p>{published_in}</p>
+            <span className="cursor-pointer">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </span>
           </div>
         </div>
       </div>
