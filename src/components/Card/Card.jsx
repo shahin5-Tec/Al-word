@@ -18,7 +18,9 @@ const Card = () => {
     fetch(` https://openapi.programming-hero.com/api/ai/tool/${uniqeId}`)
     .then(res=>res.json())
     .then(data=>setSingleData(data.data))
+    
   },[uniqeId])
+  // console.log(data.data);
   const handleShowAll = () => {
     setShowAll(true);
   };
@@ -36,7 +38,7 @@ const Card = () => {
           <Button>See More</Button>
         </span>
       )}
-     <Modal></Modal>
+     <Modal singleData={singleData}></Modal>
     </>
    
   );

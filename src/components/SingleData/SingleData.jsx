@@ -1,7 +1,7 @@
 import React from "react";
 
 const SingleData = (props) => {
-  // console.log(props);
+  console.log(props.singleData);
   const { id, image, name, features, published_in } = props.singleData;
 
   return (
