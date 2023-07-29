@@ -5,6 +5,7 @@ const Modal = (props) => {
   const { image_link, description, integrations, features } = props?.singleData;
   console.log(integrations);
   return (
+    
     <div>
       <input type="checkbox" id="my_modal_6" className="modal-toggle" />
       <div className="modal">
